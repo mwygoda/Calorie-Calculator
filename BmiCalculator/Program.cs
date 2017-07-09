@@ -6,9 +6,17 @@ namespace BmiCalculator
     {
         static void Main(string[] args)
         {
-            CalorieNeedsCalculator calorieCounter = new CalorieNeedsCalculator();
-            var result = calorieCounter.CalculateCalorieNeeds(90.5m, "zero", 50, "woman", 175.4m);
+            var Juliet = new Patient()
+            {
+                gender = Constants.WOMAN_GENDER,
+                bodyWeight = 90.5m,
+                physicalActivityLevel = Constants.PHISICAL_ACTIVITY_LOW,
+                age = 50,
+                height = 174.4m
+            };
+            var calorieCounter = new CalorieNeedsCalculator();
+            var result = calorieCounter.CalculateCalorieNeeds(Juliet);
             Console.WriteLine(result);
         }
     }
-}/////Calculate(decimal w, string ps, int a, string g, decimal h)
+}
