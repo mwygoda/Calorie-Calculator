@@ -1,0 +1,39 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/mw/RiderProjects/BmiCalculator/BmiCalculator/BmiCalculator.csproj",
+    "projectName": "BmiCalculator",
+    "projectPath": "/Users/mw/RiderProjects/BmiCalculator/BmiCalculator/BmiCalculator.csproj",
+    "outputPath": "/Users/mw/RiderProjects/BmiCalculator/BmiCalculator/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp1.1"
+    ],
+    "frameworks": {
+      "netcoreapp1.1": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp1.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "target": "Package",
+          "version": "1.1.2"
+        }
+      }
+    }
+  },
+  "runtimes": {
+    "win": {
+      "#import": []
+    },
+    "win-x64": {
+      "#import": []
+    },
+    "win-x86": {
+      "#import": []
+    }
+  }
+}

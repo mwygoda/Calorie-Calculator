@@ -1,0 +1,10 @@
+/Users/mw/RiderProjects/BmiCalculator/BmiCalculator/bin/Debug/netcoreapp1.1/BmiCalculator.deps.json
+/Users/mw/RiderProjects/BmiCalculator/BmiCalculator/bin/Debug/netcoreapp1.1/BmiCalculator.runtimeconfig.json
+/Users/mw/RiderProjects/BmiCalculator/BmiCalculator/bin/Debug/netcoreapp1.1/BmiCalculator.runtimeconfig.dev.json
+/Users/mw/RiderProjects/BmiCalculator/BmiCalculator/bin/Debug/netcoreapp1.1/BmiCalculator.dll
+/Users/mw/RiderProjects/BmiCalculator/BmiCalculator/bin/Debug/netcoreapp1.1/BmiCalculator.pdb
+/Users/mw/RiderProjects/BmiCalculator/BmiCalculator/obj/Debug/netcoreapp1.1/BmiCalculator.csprojResolveAssemblyReference.cache
+/Users/mw/RiderProjects/BmiCalculator/BmiCalculator/obj/Debug/netcoreapp1.1/BmiCalculator.csproj.CoreCompileInputs.cache
+/Users/mw/RiderProjects/BmiCalculator/BmiCalculator/obj/Debug/netcoreapp1.1/BmiCalculator.AssemblyInfo.cs
+/Users/mw/RiderProjects/BmiCalculator/BmiCalculator/obj/Debug/netcoreapp1.1/BmiCalculator.dll
+/Users/mw/RiderProjects/BmiCalculator/BmiCalculator/obj/Debug/netcoreapp1.1/BmiCalculator.pdb
