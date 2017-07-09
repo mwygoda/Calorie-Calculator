@@ -13,32 +13,32 @@ namespace BmiCalculator
             decimal calorieNeeds = 0;
             if (genderOfPatient == Constants.WOMAN_GENDER)
             {
-                if (physicalActivityLevel== Constants.PHISICAL_ACTIVITY_ZERO)
+                switch (physicalActivityLevel)
                 {
-                    Console.WriteLine("email with info send to user@gmail.com");
-                    return calorieNeeds = (655m + 9.6m * bodyWeightOfPatient + 1.85m* heightOfPatient - 4.7m * ageOfPatient) * Constants.MULTIPLER_FOR_ZERO_ACTIVITY;
+                    case Constants.PHISICAL_ACTIVITY_ZERO:
+                        calorieNeeds =
+                            (655m + 9.6m * bodyWeightOfPatient + 1.85m * heightOfPatient - 4.7m * ageOfPatient) *
+                            Constants.MULTIPLER_FOR_ZERO_ACTIVITY;
+                        break;
+                    case Constants.PHISICAL_ACTIVITY_LOW:
+                        calorieNeeds =
+                            (655m + 9.6m * bodyWeightOfPatient + 1.85m * heightOfPatient - 4.7m * ageOfPatient) *
+                            Constants.MULTIPLER_FOR_LOW_ACTIVITY;
+                        break;
+                    case Constants.PHISICAL_ACTIVITY_MEDIUM:
+                        calorieNeeds =
+                            (655m + 9.6m * bodyWeightOfPatient + 1.85m * heightOfPatient - 4.7m * ageOfPatient) *
+                            Constants.MULTIPLER_FOR_MEDIUM_ACTIVITY;
+                        break;
+                    case Constants.PHISICAL_ACTIVITY_PRO:
+                        calorieNeeds =
+                            (655m + 9.6m * bodyWeightOfPatient + 1.85m * heightOfPatient - 4.7m * ageOfPatient) *
+                            Constants.MULTIPLER_FOR_PRO_ACTIVITY;
+                        break;
+                    default:
+                        Console.WriteLine("man doesnt care :)");
+                        break;
                 }
-                else if (physicalActivityLevel == Constants.PHISICAL_ACTIVITY_LOW)
-                {
-                    Console.WriteLine("email with info send to user@gmail.com");
-                    return calorieNeeds = (655m + 9.6m * bodyWeightOfPatient + 1.85m* heightOfPatient - 4.7m * ageOfPatient) * Constants.MULTIPLER_FOR_LOW_ACTIVITY;
-                }
-                
-                else if (physicalActivityLevel == Constants.PHISICAL_ACTIVITY_MEDIUM)
-                {
-                    Console.WriteLine("email with info send to user@gmail.com");
-                    return calorieNeeds = (655m + 9.6m * bodyWeightOfPatient + 1.85m* heightOfPatient - 4.7m * ageOfPatient) * Constants.MULTIPLER_FOR_MEDIUM_ACTIVITY;
-                }
-                else if (physicalActivityLevel == Constants.PHISICAL_ACTIVITY_PRO)
-                {
-                    Console.WriteLine("email with info send to user@gmail.com");
-                    return calorieNeeds = (655m + 9.6m * bodyWeightOfPatient + 1.85m* heightOfPatient - 4.7m * ageOfPatient) * Constants.MULTIPLER_FOR_PRO_ACTIVITY;
-                }
-            }
-            else
-            {
-                Console.WriteLine("man doesnt care :)");
-                return calorieNeeds = 9999999;
             }
             Console.WriteLine("email with info send to user@gmail.com");
             return calorieNeeds;
