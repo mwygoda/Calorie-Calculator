@@ -6,6 +6,15 @@ namespace BmiCalculator
 {
     public class CalorieNeedsCalculator
     {
+        private readonly ICalorieNeedsCalculatorFactory _factory;
+        private readonly IMailSender _mailSender;
+
+        public CalorieNeedsCalculator(ICalorieNeedsCalculatorFactory factory,
+            IMailSender mailSender)
+        {
+            _factory = factory;
+            _mailSender = mailSender;
+        }
         public decimal CalculateCalorieNeeds(Patient patient)
         {
 
@@ -15,23 +24,23 @@ namespace BmiCalculator
                 switch (patient.physicalActivityLevel)
                 {
                     case Constants.PHISICAL_ACTIVITY_ZERO:
-                        calorieNeeds = CalculationExtensions.CalculateCalorieNeeds(patient, Constants.MULTIPLER_FOR_ZERO_ACTIVITY);
+                        calorieNeeds = _factory.GetCalorieNeedsCalculator().CalculateCalorieNeeds(patient, Constants.MULTIPLER_FOR_ZERO_ACTIVITY );
                         break;
                     case Constants.PHISICAL_ACTIVITY_LOW:
-                        calorieNeeds = CalculationExtensions.CalculateCalorieNeeds(patient, Constants.MULTIPLER_FOR_LOW_ACTIVITY);
+                        calorieNeeds = _factory.GetCalorieNeedsCalculator().CalculateCalorieNeeds(patient, Constants.MULTIPLER_FOR_LOW_ACTIVITY);
                         break;
                     case Constants.PHISICAL_ACTIVITY_MEDIUM:
-                        calorieNeeds = CalculationExtensions.CalculateCalorieNeeds(patient, Constants.MULTIPLER_FOR_MEDIUM_ACTIVITY);
+                        calorieNeeds = _factory.GetCalorieNeedsCalculator().CalculateCalorieNeeds(patient, Constants.MULTIPLER_FOR_MEDIUM_ACTIVITY);
                         break;
                     case Constants.PHISICAL_ACTIVITY_PRO:
-                        calorieNeeds = CalculationExtensions.CalculateCalorieNeeds(patient, Constants.MULTIPLER_FOR_PRO_ACTIVITY);
+                        calorieNeeds = _factory.GetCalorieNeedsCalculator().CalculateCalorieNeeds(patient, Constants.MULTIPLER_FOR_PRO_ACTIVITY);
                         break;
                     default:
                         Console.WriteLine("man doesnt care :)");
                         break;
                 }
             }
-            Console.WriteLine("email with info send to user@gmail.com");
+            _mailSender.SendMail("You need to eat " + calorieNeeds + "kcal, email with info send to user@gmail.com");
             return calorieNeeds;
         }
     }
