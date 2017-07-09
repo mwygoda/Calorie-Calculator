@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74abd2cb-fcdf-4c45-84f5-269fcd372b8c" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/BmiCalculator/Class1.cs" afterPath="$PROJECT_DIR$/BmiCalculator/CalorieNeedsCalculator.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BmiCalculator/bin/Debug/netcoreapp1.1/BmiCalculator.dll" afterPath="$PROJECT_DIR$/BmiCalculator/bin/Debug/netcoreapp1.1/BmiCalculator.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BmiCalculator/bin/Debug/netcoreapp1.1/BmiCalculator.pdb" afterPath="$PROJECT_DIR$/BmiCalculator/bin/Debug/netcoreapp1.1/BmiCalculator.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BmiCalculator/obj/Debug/netcoreapp1.1/BmiCalculator.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/BmiCalculator/obj/Debug/netcoreapp1.1/BmiCalculator.csproj.CoreCompileInputs.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BmiCalculator/obj/Debug/netcoreapp1.1/BmiCalculator.dll" afterPath="$PROJECT_DIR$/BmiCalculator/obj/Debug/netcoreapp1.1/BmiCalculator.dll" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BmiCalculator/obj/Debug/netcoreapp1.1/BmiCalculator.pdb" afterPath="$PROJECT_DIR$/BmiCalculator/obj/Debug/netcoreapp1.1/BmiCalculator.pdb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.BmiCalculator/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.BmiCalculator/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BmiCalculator/Program.cs" afterPath="$PROJECT_DIR$/BmiCalculator/Program.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BmiCalculator/CalorieNeedsCalculator.cs" afterPath="$PROJECT_DIR$/BmiCalculator/CalorieNeedsCalculator.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +20,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BmiCalculator/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="62" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+            <state relative-caret-position="195">
+              <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
               <folding>
                 <marker date="1499631287000" expanded="true" signature="38:352" ph="{...}" />
               </folding>
@@ -33,21 +32,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalorieNeedsCalculator.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CalorieNeedsCalculator.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BmiCalculator/CalorieNeedsCalculator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <state relative-caret-position="450">
+              <caret line="34" column="163" lean-forward="false" selection-start-line="34" selection-start-column="163" selection-end-line="34" selection-end-column="163" />
               <folding>
-                <marker date="1499632340000" expanded="true" signature="6:49" ph="..." />
-                <marker date="1499632340000" expanded="true" signature="116:1563" ph="{...}" />
-                <marker date="1499632340000" expanded="true" signature="305:1557" ph="{...}" />
-                <marker date="1499632340000" expanded="true" signature="397:1365" ph="{...}" />
-                <marker date="1499632340000" expanded="true" signature="463:632" ph="{...}" />
-                <marker date="1499632340000" expanded="true" signature="698:867" ph="{...}" />
-                <marker date="1499632340000" expanded="true" signature="951:1120" ph="{...}" />
-                <marker date="1499632340000" expanded="true" signature="1182:1351" ph="{...}" />
-                <marker date="1499632340000" expanded="true" signature="1382:1514" ph="{...}" />
+                <marker date="1499633588000" expanded="true" signature="6:102" ph="..." />
+                <marker date="1499633588000" expanded="true" signature="127:2246" ph="{...}" />
+                <marker date="1499633588000" expanded="true" signature="169:2244" ph="{...}" />
+                <marker date="1499633588000" expanded="true" signature="466:1973" ph="{...}" />
+                <marker date="1499633588000" expanded="true" signature="558:841" ph="{...}" />
+                <marker date="1499633588000" expanded="true" signature="924:1206" ph="{...}" />
+                <marker date="1499633588000" expanded="true" signature="1309:1594" ph="{...}" />
+                <marker date="1499633588000" expanded="true" signature="1677:1959" ph="{...}" />
+                <marker date="1499633588000" expanded="true" signature="1990:2122" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BmiCalculator/Constants.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+              <folding>
+                <marker date="1499633415000" expanded="true" signature="23:707" ph="{...}" />
+                <marker date="1499633415000" expanded="true" signature="59:705" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -63,6 +75,7 @@
       <list>
         <option value="$PROJECT_DIR$/BmiCalculator/Class1.cs" />
         <option value="$PROJECT_DIR$/BmiCalculator/Program.cs" />
+        <option value="$PROJECT_DIR$/BmiCalculator/Constants.cs" />
         <option value="$PROJECT_DIR$/BmiCalculator/CalorieNeedsCalculator.cs" />
       </list>
     </option>
@@ -218,12 +231,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499628258032</updated>
-      <workItem from="1499628266763" duration="3180000" />
+      <workItem from="1499628266763" duration="4313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3180000" />
+    <option name="totallyTimeSpent" value="4313000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -271,30 +284,41 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BmiCalculator/CalorieNeedsCalculator.cs">
+    <entry file="file://$PROJECT_DIR$/BmiCalculator/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="195">
+          <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
           <folding>
-            <marker date="1499632340000" expanded="true" signature="6:49" ph="..." />
-            <marker date="1499632340000" expanded="true" signature="116:1563" ph="{...}" />
-            <marker date="1499632340000" expanded="true" signature="305:1557" ph="{...}" />
-            <marker date="1499632340000" expanded="true" signature="397:1365" ph="{...}" />
-            <marker date="1499632340000" expanded="true" signature="463:632" ph="{...}" />
-            <marker date="1499632340000" expanded="true" signature="698:867" ph="{...}" />
-            <marker date="1499632340000" expanded="true" signature="951:1120" ph="{...}" />
-            <marker date="1499632340000" expanded="true" signature="1182:1351" ph="{...}" />
-            <marker date="1499632340000" expanded="true" signature="1382:1514" ph="{...}" />
+            <marker date="1499631287000" expanded="true" signature="38:352" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BmiCalculator/Program.cs">
+    <entry file="file://$PROJECT_DIR$/BmiCalculator/Constants.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="62" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+        <state relative-caret-position="210">
+          <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
           <folding>
-            <marker date="1499631287000" expanded="true" signature="38:352" ph="{...}" />
+            <marker date="1499633415000" expanded="true" signature="23:707" ph="{...}" />
+            <marker date="1499633415000" expanded="true" signature="59:705" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BmiCalculator/CalorieNeedsCalculator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="34" column="163" lean-forward="false" selection-start-line="34" selection-start-column="163" selection-end-line="34" selection-end-column="163" />
+          <folding>
+            <marker date="1499633588000" expanded="true" signature="6:102" ph="..." />
+            <marker date="1499633588000" expanded="true" signature="127:2246" ph="{...}" />
+            <marker date="1499633588000" expanded="true" signature="169:2244" ph="{...}" />
+            <marker date="1499633588000" expanded="true" signature="466:1973" ph="{...}" />
+            <marker date="1499633588000" expanded="true" signature="558:841" ph="{...}" />
+            <marker date="1499633588000" expanded="true" signature="924:1206" ph="{...}" />
+            <marker date="1499633588000" expanded="true" signature="1309:1594" ph="{...}" />
+            <marker date="1499633588000" expanded="true" signature="1677:1959" ph="{...}" />
+            <marker date="1499633588000" expanded="true" signature="1990:2122" ph="{...}" />
           </folding>
         </state>
       </provider>

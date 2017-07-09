@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Security.Cryptography;
+using System.Security.Cryptography.X509Certificates;
 
 namespace BmiCalculator
 {
@@ -8,25 +9,30 @@ namespace BmiCalculator
         public decimal CalculateCalorieNeeds(decimal bodyWeightOfPatient, string physicalActivityLevel,
             int ageOfPatient, string genderOfPatient, decimal heightOfPatient)
         {
+
             decimal calorieNeeds = 0;
-            if (genderOfPatient == "woman")
+            if (genderOfPatient == Constants.WOMAN_GENDER)
             {
-                if (physicalActivityLevel== "zero")
+                if (physicalActivityLevel== Constants.PHISICAL_ACTIVITY_ZERO)
                 {
-                    return calorieNeeds = (655m + 9.6m * bodyWeightOfPatient + 1.85m* heightOfPatient - 4.7m * ageOfPatient) * 1.0m;
+                    Console.WriteLine("email with info send to user@gmail.com");
+                    return calorieNeeds = (655m + 9.6m * bodyWeightOfPatient + 1.85m* heightOfPatient - 4.7m * ageOfPatient) * Constants.MULTIPLER_FOR_ZERO_ACTIVITY;
                 }
-                else if (physicalActivityLevel == "twoTimesWeek")
+                else if (physicalActivityLevel == Constants.PHISICAL_ACTIVITY_LOW)
                 {
-                    return calorieNeeds = (655m + 9.6m * bodyWeightOfPatient + 1.85m* heightOfPatient - 4.7m * ageOfPatient) * 1.2m;
+                    Console.WriteLine("email with info send to user@gmail.com");
+                    return calorieNeeds = (655m + 9.6m * bodyWeightOfPatient + 1.85m* heightOfPatient - 4.7m * ageOfPatient) * Constants.MULTIPLER_FOR_LOW_ACTIVITY;
                 }
                 
-                else if (physicalActivityLevel == "fourTimesWeek")
+                else if (physicalActivityLevel == Constants.PHISICAL_ACTIVITY_MEDIUM)
                 {
-                    return calorieNeeds = (655m + 9.6m * bodyWeightOfPatient + 1.85m* heightOfPatient - 4.7m * ageOfPatient) * 1.5m;
+                    Console.WriteLine("email with info send to user@gmail.com");
+                    return calorieNeeds = (655m + 9.6m * bodyWeightOfPatient + 1.85m* heightOfPatient - 4.7m * ageOfPatient) * Constants.MULTIPLER_FOR_MEDIUM_ACTIVITY;
                 }
-                else if (physicalActivityLevel == "everyday")
+                else if (physicalActivityLevel == Constants.PHISICAL_ACTIVITY_PRO)
                 {
-                    return calorieNeeds = (655m + 9.6m * bodyWeightOfPatient + 1.85m* heightOfPatient - 4.7m * ageOfPatient) * 2.0m;
+                    Console.WriteLine("email with info send to user@gmail.com");
+                    return calorieNeeds = (655m + 9.6m * bodyWeightOfPatient + 1.85m* heightOfPatient - 4.7m * ageOfPatient) * Constants.MULTIPLER_FOR_PRO_ACTIVITY;
                 }
             }
             else
@@ -34,6 +40,7 @@ namespace BmiCalculator
                 Console.WriteLine("man doesnt care :)");
                 return calorieNeeds = 9999999;
             }
+            Console.WriteLine("email with info send to user@gmail.com");
             return calorieNeeds;
         }
     }
